@@ -7,7 +7,7 @@ import jakarta.enterprise.context.ApplicationScoped;
 import java.time.Duration;
 
 @ApplicationScoped
-public class    ReactiveGreetingService {
+public class ReactiveGreetingService {
 
     public Uni<String> greeting(String name) {
         return Uni.createFrom().item(name)
